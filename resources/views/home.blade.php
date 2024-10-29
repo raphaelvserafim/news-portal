@@ -7,5 +7,7 @@
 
 @include('posts.trending')
 
+@include('posts.weekly')
+
 
 @endsection
