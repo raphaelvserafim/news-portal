@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Category;
+use App\Http\Controllers\Contact;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostsController;
 
@@ -21,5 +22,7 @@ Route::get('/', function () {
 
 
 Route::resource('category',   Category::class);
+
+Route::resource('contact',   Contact::class);
 
 Route::resource('post', PostsController::class);
