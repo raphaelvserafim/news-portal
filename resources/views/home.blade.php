@@ -13,5 +13,7 @@
 
 @include('posts.articles')
 
+@include('posts.youtube')
+
 
 @endsection
