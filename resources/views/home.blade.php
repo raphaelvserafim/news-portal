@@ -11,5 +11,7 @@
 
 @include('posts.weekly2')
 
+@include('posts.articles')
+
 
 @endsection
