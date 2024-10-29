@@ -9,5 +9,7 @@
 
 @include('posts.weekly')
 
+@include('posts.weekly2')
+
 
 @endsection
