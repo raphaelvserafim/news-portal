@@ -5,5 +5,7 @@
 
 @section('content')
 
+@include('posts.trending')
+
 
 @endsection
