@@ -8,8 +8,7 @@
             <div class="row d-flex justify-content-between align-items-center">
               <div class="header-info-left">
                 <ul>
-                  <li><img src="assets/img/icon/header_icon1.png" alt="">34ºc, Sunny </li>
-                  <li><img src="assets/img/icon/header_icon1.png" alt="">Tuesday, 18th June, 2019</li>
+                  <li><img src="assets/img/icon/header_icon1.png" alt="{{ \Carbon\Carbon::now()->format('l, jS F, Y') }}">{{ \Carbon\Carbon::now()->format('l, jS F, Y') }}</li>
                 </ul>
               </div>
               <div class="header-info-right">
@@ -53,10 +52,8 @@
                 <nav>
                   <ul id="navigation">
                     <li><a href="/">Home</a></li>
-                    <li><a href="categori.html">Category</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="latest_news.html">Latest News</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="/category">Category</a></li>
+                    <li><a href="/contact">Contact</a></li>
                     <li><a href="#">Pages</a>
                       <ul class="submenu">
                         <li><a href="elements.html">Element</a></li>
