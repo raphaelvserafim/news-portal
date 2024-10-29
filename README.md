@@ -17,8 +17,7 @@ Make sure you have the following installed before starting:
 - PHP >= 8.1
 - Composer
 - MySQL or another compatible database
-- Node.js and npm (for frontend dependencies)
-
+ 
 ## Installation
 
 1. Clone the repository:
