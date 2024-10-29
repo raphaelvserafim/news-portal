@@ -13,7 +13,7 @@
 
 @include('posts.articles')
 
-@include('posts.youtube')
+<!-- @include('posts.youtube') -->
 
 
 @endsection

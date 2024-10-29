@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Category;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostsController;
 
@@ -18,5 +19,7 @@ Route::get('/', function () {
   return view('home');
 });
 
+
+Route::resource('category',   Category::class);
 
 Route::resource('post', PostsController::class);
