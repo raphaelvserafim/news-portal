@@ -29,12 +29,12 @@ Route::get('/admin/auth/login', function () {
 
 Route::get('/admin/dashboard', [AdminController::class, 'dashboard']); //->middleware('auth');
 
-Route::get('/admin/posts', [AdminController::class, 'dashboard']); //->middleware('auth');
-Route::get('/admin/post-new', [AdminController::class, 'dashboard']); //->middleware('auth');
+Route::get('/admin/posts', [AdminController::class, 'allPosts']); //->middleware('auth');
+Route::get('/admin/post-new', [AdminController::class, 'addPosts']); //->middleware('auth');
 Route::get('/admin/edit-post/{id}', [AdminController::class, 'dashboard']); //->middleware('auth');
 
 
-Route::get('/admin/category', [AdminController::class, 'dashboard']); //->middleware('auth');
+Route::get('/admin/category', [AdminController::class, 'category']); //->middleware('auth');
 
 Route::get('/admin/general', [AdminController::class, 'dashboard']); //->middleware('auth');
 Route::get('/admin/users', [AdminController::class, 'dashboard']); //->middleware('auth');
