@@ -5,6 +5,7 @@ use App\Http\Controllers\Category;
 use App\Http\Controllers\Contact;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostsController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,7 +38,7 @@ Route::get('/admin/edit-post/{id}', [AdminController::class, 'dashboard']); //->
 Route::get('/admin/category', [AdminController::class, 'category']); //->middleware('auth');
 
 Route::get('/admin/general', [AdminController::class, 'dashboard']); //->middleware('auth');
-Route::get('/admin/users', [AdminController::class, 'dashboard']); //->middleware('auth');
+Route::get('/admin/users', [AdminController::class, 'users']); //->middleware('auth');
 
 
 Route::get('/admin/comments', [AdminController::class, 'dashboard']); //->middleware('auth');
@@ -48,3 +49,6 @@ Route::resource('category',   Category::class);
 Route::resource('contact',   Contact::class);
 
 Route::resource('post', PostsController::class);
+
+
+Route::post('/users/store', [UserController::class, 'store'])->name('users.store');

@@ -6,7 +6,7 @@
 @section('content')
 
 <div class="row">
-  <div class="row col-5 mb-1">
+  <div class="col-5 mb-1">
     <div class="card">
       <div class="card-body">
         <div class="row">
@@ -20,7 +20,7 @@
       </div>
     </div>
   </div>
-  <div class="row col-7">
+  <div class="col-7">
     <div class="card">
       <div class="card-body">
         <div class="row">
@@ -49,7 +49,8 @@
                   ABC
                 </td>
                 <td class="text-center">
-                  <button class="btn btn-info">Edit</button>
+                  <button class="btn btn-sm btn-info"><iconify-icon icon="line-md:edit"></iconify-icon></button>
+                  <button class="btn btn-sm btn-danger"><iconify-icon icon="material-symbols:delete"></iconify-icon></button>
                 </td>
               </tr>
             </tbody>

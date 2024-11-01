@@ -39,7 +39,7 @@
                 <td class="text-center">2024-10-30</td>
                 <td class="text-center">Raphael Serafim</td>
                 <td class="text-center">
-                  <button class="btn btn-info">Edit</button>
+                  <button class="btn btn-sm btn-info"><iconify-icon icon="line-md:edit"></iconify-icon></button>
                 </td>
               </tr>
             </tbody>
