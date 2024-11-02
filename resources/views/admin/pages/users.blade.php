@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', 'Admin - Posts')
+@section('title', 'Admin - Users')
 
 
 @section('content')
@@ -72,21 +72,17 @@
               </tr>
             </thead>
             <tbody class="table-group-divider">
+              @foreach($users as $user)
               <tr>
-                <th scope="row" class="ps-0">
-                  1
-                </th>
-                <td>
-                  ABC
-                </td>
-                <td>
-                  rrr@gmail.com
-                </td>
+                <td>{{ $user->id }}</td>
+                <td>{{ $user->name }}</td>
+                <td>{{ $user->email }}</td>
                 <td class="text-center">
                   <button class="btn btn-sm btn-info"><iconify-icon icon="line-md:edit"></iconify-icon></button>
                   <button class="btn btn-sm btn-danger"><iconify-icon icon="material-symbols:delete"></iconify-icon></button>
                 </td>
               </tr>
+              @endforeach
             </tbody>
         </div>
       </div>
